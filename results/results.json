@@ -1,0 +1,655 @@
+{
+ "model": "openai/gpt-5-mini",
+ "provider": "fal",
+ "documented_cutoff": "2024-05",
+ "config_hash": "5e819a055803",
+ "run_tag": "openai/gpt-5-mini|5e819a055803",
+ "settings": {
+  "reasoning_effort": "minimal",
+  "max_tokens": 6000,
+  "analysts": [
+   "market"
+  ],
+  "debate_rounds": 1,
+  "risk_rounds": 1
+ },
+ "costs_main": {
+  "bps": 5.0,
+  "borrow_pa": 0.003
+ },
+ "windows": {
+  "paper": [
+   "2024-01-02",
+   "2024-03-28"
+  ],
+  "dev": [
+   "2026-04-01",
+   "2026-06-30"
+  ],
+  "holdout": [
+   "2026-07-01",
+   "2026-09-30"
+  ]
+ },
+ "every_n_trading_days": 10,
+ "trials": {
+  "agent_runs": 5,
+  "decisions": 48,
+  "holdout_runs": 1
+ },
+ "spend_usd": 2.1829,
+ "pooled": {
+  "holdout": {
+   "stocks": 3,
+   "ta_mean_CR%": -2.64,
+   "ta_mean_SR": -0.31,
+   "bh_mean_CR%": 4.64,
+   "random_median_CR%": -0.68,
+   "ta_mean_percentile_vs_random": 41.1,
+   "beat_bh": 0
+  },
+  "paper": {
+   "stocks": 3,
+   "ta_mean_CR%": 7.79,
+   "ta_mean_SR": 0.94,
+   "bh_mean_CR%": 7.89,
+   "random_median_CR%": -0.11,
+   "ta_mean_percentile_vs_random": 63.8,
+   "beat_bh": 0
+  }
+ },
+ "per_stock": [
+  {
+   "run_tag": "openai/gpt-5-mini|5e819a055803",
+   "window": "holdout",
+   "ticker": "AAPL",
+   "decisions": 6,
+   "ratings": {
+    "Overweight": 2,
+    "Underweight": 2,
+    "Hold": 1,
+    "ERROR": 1
+   },
+   "ta_zero": {
+    "CR%": -5.35,
+    "AR%": -24.19,
+    "SR": -0.75,
+    "MDD%": 18.13,
+    "days": 50
+   },
+   "bh_zero": {
+    "CR%": 13.93,
+    "AR%": 92.92,
+    "SR": 1.99,
+    "MDD%": 10.97,
+    "days": 50
+   },
+   "position_changes": 2,
+   "ta_retail": {
+    "CR%": -5.56,
+    "AR%": -25.04,
+    "SR": -0.78,
+    "MDD%": 18.27,
+    "days": 50
+   },
+   "bh_retail": {
+    "CR%": 13.82,
+    "AR%": 91.98,
+    "SR": 1.98,
+    "MDD%": 10.97,
+    "days": 50
+   },
+   "ta_harsh": {
+    "CR%": -6.17,
+    "AR%": -27.47,
+    "SR": -0.88,
+    "MDD%": 18.69,
+    "days": 50
+   },
+   "bh_harsh": {
+    "CR%": 13.49,
+    "AR%": 89.19,
+    "SR": 1.94,
+    "MDD%": 10.97,
+    "days": 50
+   },
+   "random_retail": {
+    "median_CR%": -0.77,
+    "p5_CR%": -14.35,
+    "p95_CR%": 13.82,
+    "ta_percentile": 29.4
+   }
+  },
+  {
+   "run_tag": "openai/gpt-5-mini|5e819a055803",
+   "window": "holdout",
+   "ticker": "AMZN",
+   "decisions": 6,
+   "ratings": {
+    "Overweight": 3,
+    "Hold": 2,
+    "ERROR": 1
+   },
+   "ta_zero": {
+    "CR%": 4.78,
+    "AR%": 26.51,
+    "SR": 0.66,
+    "MDD%": 11.18,
+    "days": 50
+   },
+   "bh_zero": {
+    "CR%": 4.78,
+    "AR%": 26.51,
+    "SR": 0.66,
+    "MDD%": 11.18,
+    "days": 50
+   },
+   "position_changes": 1,
+   "ta_retail": {
+    "CR%": 4.67,
+    "AR%": 25.88,
+    "SR": 0.65,
+    "MDD%": 11.18,
+    "days": 50
+   },
+   "bh_retail": {
+    "CR%": 4.67,
+    "AR%": 25.88,
+    "SR": 0.65,
+    "MDD%": 11.18,
+    "days": 50
+   },
+   "ta_harsh": {
+    "CR%": 4.36,
+    "AR%": 23.99,
+    "SR": 0.62,
+    "MDD%": 11.18,
+    "days": 50
+   },
+   "bh_harsh": {
+    "CR%": 4.36,
+    "AR%": 23.99,
+    "SR": 0.62,
+    "MDD%": 11.18,
+    "days": 50
+   },
+   "random_retail": {
+    "median_CR%": 0.0,
+    "p5_CR%": -8.05,
+    "p95_CR%": 4.67,
+    "ta_percentile": 91.3
+   }
+  },
+  {
+   "run_tag": "openai/gpt-5-mini|5e819a055803",
+   "window": "holdout",
+   "ticker": "GOOGL",
+   "decisions": 6,
+   "ratings": {
+    "Overweight": 3,
+    "Underweight": 1,
+    "Hold": 1,
+    "ERROR": 1
+   },
+   "ta_zero": {
+    "CR%": -6.73,
+    "AR%": -29.59,
+    "SR": -0.76,
+    "MDD%": 17.62,
+    "days": 50
+   },
+   "bh_zero": {
+    "CR%": -4.49,
+    "AR%": -20.67,
+    "SR": -0.46,
+    "MDD%": 14.65,
+    "days": 50
+   },
+   "position_changes": 3,
+   "ta_retail": {
+    "CR%": -7.03,
+    "AR%": -30.73,
+    "SR": -0.8,
+    "MDD%": 17.63,
+    "days": 50
+   },
+   "bh_retail": {
+    "CR%": -4.58,
+    "AR%": -21.06,
+    "SR": -0.48,
+    "MDD%": 14.65,
+    "days": 50
+   },
+   "ta_harsh": {
+    "CR%": -7.91,
+    "AR%": -34.0,
+    "SR": -0.92,
+    "MDD%": 17.89,
+    "days": 50
+   },
+   "bh_harsh": {
+    "CR%": -4.87,
+    "AR%": -22.23,
+    "SR": -0.52,
+    "MDD%": 14.65,
+    "days": 50
+   },
+   "random_retail": {
+    "median_CR%": -1.28,
+    "p5_CR%": -6.37,
+    "p95_CR%": 3.53,
+    "ta_percentile": 2.5
+   }
+  },
+  {
+   "run_tag": "openai/gpt-5-mini|5e819a055803",
+   "window": "paper",
+   "ticker": "AAPL",
+   "decisions": 7,
+   "ratings": {
+    "Overweight": 3,
+    "Hold": 3,
+    "Underweight": 1
+   },
+   "ta_zero": {
+    "CR%": -7.15,
+    "AR%": -26.77,
+    "SR": -1.56,
+    "MDD%": 15.28,
+    "days": 60
+   },
+   "bh_zero": {
+    "CR%": -6.95,
+    "AR%": -26.12,
+    "SR": -1.52,
+    "MDD%": 13.41,
+    "days": 60
+   },
+   "position_changes": 2,
+   "ta_retail": {
+    "CR%": -7.35,
+    "AR%": -27.43,
+    "SR": -1.6,
+    "MDD%": 15.37,
+    "days": 60
+   },
+   "bh_retail": {
+    "CR%": -7.05,
+    "AR%": -26.43,
+    "SR": -1.54,
+    "MDD%": 13.41,
+    "days": 60
+   },
+   "ta_harsh": {
+    "CR%": -7.94,
+    "AR%": -29.35,
+    "SR": -1.7,
+    "MDD%": 15.64,
+    "days": 60
+   },
+   "bh_harsh": {
+    "CR%": -7.33,
+    "AR%": -27.36,
+    "SR": -1.59,
+    "MDD%": 13.41,
+    "days": 60
+   },
+   "random_retail": {
+    "median_CR%": -0.34,
+    "p5_CR%": -7.98,
+    "p95_CR%": 7.35,
+    "ta_percentile": 6.3
+   }
+  },
+  {
+   "run_tag": "openai/gpt-5-mini|5e819a055803",
+   "window": "paper",
+   "ticker": "AMZN",
+   "decisions": 7,
+   "ratings": {
+    "Overweight": 4,
+    "Hold": 3
+   },
+   "ta_zero": {
+    "CR%": 21.17,
+    "AR%": 124.03,
+    "SR": 2.98,
+    "MDD%": 4.04,
+    "days": 60
+   },
+   "bh_zero": {
+    "CR%": 21.17,
+    "AR%": 124.03,
+    "SR": 2.98,
+    "MDD%": 4.04,
+    "days": 60
+   },
+   "position_changes": 1,
+   "ta_retail": {
+    "CR%": 21.05,
+    "AR%": 123.08,
+    "SR": 2.96,
+    "MDD%": 4.04,
+    "days": 60
+   },
+   "bh_retail": {
+    "CR%": 21.05,
+    "AR%": 123.08,
+    "SR": 2.96,
+    "MDD%": 4.04,
+    "days": 60
+   },
+   "ta_harsh": {
+    "CR%": 20.68,
+    "AR%": 120.25,
+    "SR": 2.9,
+    "MDD%": 4.04,
+    "days": 60
+   },
+   "bh_harsh": {
+    "CR%": 20.68,
+    "AR%": 120.25,
+    "SR": 2.9,
+    "MDD%": 4.04,
+    "days": 60
+   },
+   "random_retail": {
+    "median_CR%": 0.0,
+    "p5_CR%": -19.02,
+    "p95_CR%": 21.05,
+    "ta_percentile": 92.6
+   }
+  },
+  {
+   "run_tag": "openai/gpt-5-mini|5e819a055803",
+   "window": "paper",
+   "ticker": "GOOGL",
+   "decisions": 7,
+   "ratings": {
+    "Overweight": 4,
+    "Hold": 3
+   },
+   "ta_zero": {
+    "CR%": 9.79,
+    "AR%": 48.05,
+    "SR": 1.46,
+    "MDD%": 13.69,
+    "days": 60
+   },
+   "bh_zero": {
+    "CR%": 9.79,
+    "AR%": 48.05,
+    "SR": 1.46,
+    "MDD%": 13.69,
+    "days": 60
+   },
+   "position_changes": 1,
+   "ta_retail": {
+    "CR%": 9.68,
+    "AR%": 47.43,
+    "SR": 1.45,
+    "MDD%": 13.69,
+    "days": 60
+   },
+   "bh_retail": {
+    "CR%": 9.68,
+    "AR%": 47.43,
+    "SR": 1.45,
+    "MDD%": 13.69,
+    "days": 60
+   },
+   "ta_harsh": {
+    "CR%": 9.36,
+    "AR%": 45.59,
+    "SR": 1.4,
+    "MDD%": 13.69,
+    "days": 60
+   },
+   "bh_harsh": {
+    "CR%": 9.36,
+    "AR%": 45.59,
+    "SR": 1.4,
+    "MDD%": 13.69,
+    "days": 60
+   },
+   "random_retail": {
+    "median_CR%": 0.0,
+    "p5_CR%": -10.46,
+    "p95_CR%": 9.68,
+    "ta_percentile": 92.6
+   }
+  }
+ ],
+ "leak_probe": {
+  "claude-haiku-5-5": {
+   "model": "claude-haiku-5-5",
+   "documented_cutoff": "2026-06",
+   "groups": {
+    "monthly:post_cutoff": {
+     "n": 24,
+     "direction_hit_rate": 0.5,
+     "always_majority_rate": 0.625,
+     "p_vs_coin": 0.5806,
+     "price_within_5pct": 0.167,
+     "answered": 24,
+     "direction_hit_rate_answered": 0.5
+    },
+    "monthly:pre_cutoff": {
+     "n": 252,
+     "direction_hit_rate": 0.817,
+     "always_majority_rate": 0.627,
+     "p_vs_coin": 0.0,
+     "price_within_5pct": 0.829,
+     "answered": 252,
+     "direction_hit_rate_answered": 0.817
+    },
+    "weekly_paper:pre_cutoff": {
+     "n": 36,
+     "direction_hit_rate": 0.694,
+     "always_majority_rate": 0.639,
+     "p_vs_coin": 0.0144,
+     "price_within_5pct": 0.944,
+     "answered": 36,
+     "direction_hit_rate_answered": 0.694
+    }
+   },
+   "by_quarter": {
+    "2023Q1": {
+     "n": 18,
+     "direction_hit_rate": 0.833,
+     "price_within_5pct": 0.889
+    },
+    "2023Q2": {
+     "n": 18,
+     "direction_hit_rate": 0.944,
+     "price_within_5pct": 0.944
+    },
+    "2023Q3": {
+     "n": 18,
+     "direction_hit_rate": 0.778,
+     "price_within_5pct": 0.833
+    },
+    "2023Q4": {
+     "n": 18,
+     "direction_hit_rate": 0.944,
+     "price_within_5pct": 0.833
+    },
+    "2024Q1": {
+     "n": 54,
+     "direction_hit_rate": 0.741,
+     "price_within_5pct": 0.907
+    },
+    "2024Q2": {
+     "n": 18,
+     "direction_hit_rate": 0.833,
+     "price_within_5pct": 0.944
+    },
+    "2024Q3": {
+     "n": 18,
+     "direction_hit_rate": 0.833,
+     "price_within_5pct": 0.778
+    },
+    "2024Q4": {
+     "n": 18,
+     "direction_hit_rate": 0.833,
+     "price_within_5pct": 0.944
+    },
+    "2025Q1": {
+     "n": 18,
+     "direction_hit_rate": 0.833,
+     "price_within_5pct": 0.778
+    },
+    "2025Q2": {
+     "n": 18,
+     "direction_hit_rate": 0.889,
+     "price_within_5pct": 0.833
+    },
+    "2025Q3": {
+     "n": 18,
+     "direction_hit_rate": 0.778,
+     "price_within_5pct": 1.0
+    },
+    "2025Q4": {
+     "n": 18,
+     "direction_hit_rate": 0.778,
+     "price_within_5pct": 0.944
+    },
+    "2026Q1": {
+     "n": 18,
+     "direction_hit_rate": 0.722,
+     "price_within_5pct": 0.889
+    },
+    "2026Q2": {
+     "n": 18,
+     "direction_hit_rate": 0.611,
+     "price_within_5pct": 0.167
+    },
+    "2026Q3": {
+     "n": 18,
+     "direction_hit_rate": 0.611,
+     "price_within_5pct": 0.167
+    },
+    "2026Q4": {
+     "n": 6,
+     "direction_hit_rate": 0.167,
+     "price_within_5pct": 0.167
+    }
+   }
+  },
+  "openai/gpt-5-mini": {
+   "model": "openai/gpt-5-mini",
+   "documented_cutoff": "2024-05",
+   "groups": {
+    "monthly:post_cutoff": {
+     "n": 174,
+     "direction_hit_rate": 0.552,
+     "always_majority_rate": 0.563,
+     "p_vs_coin": 0.0987,
+     "price_within_5pct": 0.063,
+     "answered": 174,
+     "direction_hit_rate_answered": 0.552
+    },
+    "monthly:pre_cutoff": {
+     "n": 102,
+     "direction_hit_rate": 0.676,
+     "always_majority_rate": 0.735,
+     "p_vs_coin": 0.0002,
+     "price_within_5pct": 0.412,
+     "answered": 102,
+     "direction_hit_rate_answered": 0.676
+    },
+    "weekly_paper:pre_cutoff": {
+     "n": 36,
+     "direction_hit_rate": 0.694,
+     "always_majority_rate": 0.639,
+     "p_vs_coin": 0.0144,
+     "price_within_5pct": 0.583,
+     "answered": 36,
+     "direction_hit_rate_answered": 0.694
+    }
+   },
+   "by_quarter": {
+    "2023Q1": {
+     "n": 18,
+     "direction_hit_rate": 0.778,
+     "price_within_5pct": 0.556
+    },
+    "2023Q2": {
+     "n": 18,
+     "direction_hit_rate": 0.722,
+     "price_within_5pct": 0.5
+    },
+    "2023Q3": {
+     "n": 18,
+     "direction_hit_rate": 0.722,
+     "price_within_5pct": 0.556
+    },
+    "2023Q4": {
+     "n": 18,
+     "direction_hit_rate": 0.556,
+     "price_within_5pct": 0.278
+    },
+    "2024Q1": {
+     "n": 54,
+     "direction_hit_rate": 0.685,
+     "price_within_5pct": 0.5
+    },
+    "2024Q2": {
+     "n": 18,
+     "direction_hit_rate": 0.667,
+     "price_within_5pct": 0.111
+    },
+    "2024Q3": {
+     "n": 18,
+     "direction_hit_rate": 0.444,
+     "price_within_5pct": 0.111
+    },
+    "2024Q4": {
+     "n": 18,
+     "direction_hit_rate": 0.667,
+     "price_within_5pct": 0.056
+    },
+    "2025Q1": {
+     "n": 18,
+     "direction_hit_rate": 0.222,
+     "price_within_5pct": 0.167
+    },
+    "2025Q2": {
+     "n": 18,
+     "direction_hit_rate": 0.722,
+     "price_within_5pct": 0.111
+    },
+    "2025Q3": {
+     "n": 18,
+     "direction_hit_rate": 0.778,
+     "price_within_5pct": 0.056
+    },
+    "2025Q4": {
+     "n": 18,
+     "direction_hit_rate": 0.444,
+     "price_within_5pct": 0.056
+    },
+    "2026Q1": {
+     "n": 18,
+     "direction_hit_rate": 0.333,
+     "price_within_5pct": 0.056
+    },
+    "2026Q2": {
+     "n": 18,
+     "direction_hit_rate": 0.611,
+     "price_within_5pct": 0.0
+    },
+    "2026Q3": {
+     "n": 18,
+     "direction_hit_rate": 0.667,
+     "price_within_5pct": 0.0
+    },
+    "2026Q4": {
+     "n": 6,
+     "direction_hit_rate": 0.5,
+     "price_within_5pct": 0.0
+    }
+   }
+  }
+ }
+}

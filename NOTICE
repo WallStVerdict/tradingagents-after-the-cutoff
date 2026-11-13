@@ -1,0 +1,13 @@
+Third-party material (not covered by the MIT licence in LICENSE):
+
+- TradingAgents (TauricResearch), Apache-2.0, https://github.com/TauricResearch/TradingAgents
+  pinned at commit 9fa1196fffbcfd9de5146d2dd2869df84ab99838. Installed by pip from GitHub, not copied here.
+  run_agent.py calls it unmodified; it only swaps the price source (yfinance.Ticker) for local files.
+- Paper quoted: Xiao, Sun, Luo, Wang, "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+  arXiv 2412.20138 (v7, 3 Jun 2025).
+- FRED series DTB3 (3-month T-bill), Federal Reserve Bank of St. Louis. Downloaded at run time, not included.
+- Daily stock prices: Yahoo Finance daily bars through yfinance (TradingAgents' own default source), split- and
+  dividend-adjusted OHLC plus the as-printed close, pulled 11 Nov 2026 18:31 UK. NOT included in this repo;
+  `python data.py --yahoo` pulls them, data.sha256 records the files we used. Tiingo is supported as an alternative.
+- Python dependencies (installed, not included): langchain / langgraph (MIT), pandas, numpy, matplotlib (BSD-style),
+  yfinance (Apache-2.0), fal-client (Apache-2.0).

@@ -1,0 +1,115 @@
+{
+ "model": "openai/gpt-5-mini",
+ "documented_cutoff": "2024-05",
+ "groups": {
+  "monthly:post_cutoff": {
+   "n": 174,
+   "direction_hit_rate": 0.552,
+   "always_majority_rate": 0.563,
+   "p_vs_coin": 0.0987,
+   "price_within_5pct": 0.063,
+   "answered": 174,
+   "direction_hit_rate_answered": 0.552
+  },
+  "monthly:pre_cutoff": {
+   "n": 102,
+   "direction_hit_rate": 0.676,
+   "always_majority_rate": 0.735,
+   "p_vs_coin": 0.0002,
+   "price_within_5pct": 0.412,
+   "answered": 102,
+   "direction_hit_rate_answered": 0.676
+  },
+  "weekly_paper:pre_cutoff": {
+   "n": 36,
+   "direction_hit_rate": 0.694,
+   "always_majority_rate": 0.639,
+   "p_vs_coin": 0.0144,
+   "price_within_5pct": 0.583,
+   "answered": 36,
+   "direction_hit_rate_answered": 0.694
+  }
+ },
+ "by_quarter": {
+  "2023Q1": {
+   "n": 18,
+   "direction_hit_rate": 0.778,
+   "price_within_5pct": 0.556
+  },
+  "2023Q2": {
+   "n": 18,
+   "direction_hit_rate": 0.722,
+   "price_within_5pct": 0.5
+  },
+  "2023Q3": {
+   "n": 18,
+   "direction_hit_rate": 0.722,
+   "price_within_5pct": 0.556
+  },
+  "2023Q4": {
+   "n": 18,
+   "direction_hit_rate": 0.556,
+   "price_within_5pct": 0.278
+  },
+  "2024Q1": {
+   "n": 54,
+   "direction_hit_rate": 0.685,
+   "price_within_5pct": 0.5
+  },
+  "2024Q2": {
+   "n": 18,
+   "direction_hit_rate": 0.667,
+   "price_within_5pct": 0.111
+  },
+  "2024Q3": {
+   "n": 18,
+   "direction_hit_rate": 0.444,
+   "price_within_5pct": 0.111
+  },
+  "2024Q4": {
+   "n": 18,
+   "direction_hit_rate": 0.667,
+   "price_within_5pct": 0.056
+  },
+  "2025Q1": {
+   "n": 18,
+   "direction_hit_rate": 0.222,
+   "price_within_5pct": 0.167
+  },
+  "2025Q2": {
+   "n": 18,
+   "direction_hit_rate": 0.722,
+   "price_within_5pct": 0.111
+  },
+  "2025Q3": {
+   "n": 18,
+   "direction_hit_rate": 0.778,
+   "price_within_5pct": 0.056
+  },
+  "2025Q4": {
+   "n": 18,
+   "direction_hit_rate": 0.444,
+   "price_within_5pct": 0.056
+  },
+  "2026Q1": {
+   "n": 18,
+   "direction_hit_rate": 0.333,
+   "price_within_5pct": 0.056
+  },
+  "2026Q2": {
+   "n": 18,
+   "direction_hit_rate": 0.611,
+   "price_within_5pct": 0.0
+  },
+  "2026Q3": {
+   "n": 18,
+   "direction_hit_rate": 0.667,
+   "price_within_5pct": 0.0
+  },
+  "2026Q4": {
+   "n": 6,
+   "direction_hit_rate": 0.5,
+   "price_within_5pct": 0.0
+  }
+ }
+}
