@@ -1,5 +1,9 @@
 # TradingAgents, tested on dates after its brain was trained
 
+[![Watch the episode](https://img.youtube.com/vi/4suLfz-Dmk0/maxresdefault.jpg)](https://www.youtube.com/watch?v=4suLfz-Dmk0)
+
+**[Watch the episode](https://www.youtube.com/watch?v=4suLfz-Dmk0)**
+
 > Results from 11 Nov 2026. One run per window, one model, small samples: read it as a test, not a ranking. Education, not advice.
 
 **Claim tested.** TradingAgents (TauricResearch, Apache-2.0) is a multi-agent LLM "trading firm":
@@ -121,5 +125,6 @@ make reproduce         # leak probe, paper window, holdout (once; needs HOLDOUT_
 make docker            # the same in python:3.12-slim
 ```
 `SPEND_CAP_USD` (default 3) stops every LLM call once the ledger reaches it.
+`make report` needs the run's `TA_*` settings exported (as above); without them it rebuilds `results.json` with empty per-stock results.
 
 Code: MIT (see LICENSE). Third-party material: see NOTICE. Education, not advice.
